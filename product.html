@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-product</title>
+
+    <!-- External css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External js file link  -->
+    <script src="script.js"></script>
+
+     <!-- Bootstrap links -->
+     <link rel="stylesheet" href="bootstrap.min.css">
+     <script src="bootstrap.bundle.min.js"></script>
+ 
+     <!-- owl carousel links -->
+     <link rel="stylesheet" href="owl.carousel.min.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+     <script src="jquery.min.js"></script>
+     <script src="owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!---------------------- navbar starts here  --------------------------->
+    <nav class="navbar  navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand " href="index.html">EduQRCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg">
+                <span class="toggleicon"><i class="bi bi-text-right"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">EduQRCode</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="menu">
+                    <ul class="navbar-nav justify-content-center ms-5  flex-grow-1">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="category.html">Men</a></li>
+                                <li><a class="dropdown-item" href="category.html">Women</a></li>
+                                <li><a class="dropdown-item" href="category.html">Children</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Women
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                                <li><a class="dropdown-item" href="#">Jeans</a></li>
+                                <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
+                        </li>
+
+                     
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blogs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex mt-2 me-3 login" role="search">
+
+                        <!-- <a href="#">Sign Up</a>&nbsp;/ &nbsp;<a href="#">Sign In</a> -->
+
+
+                        <div class="input-wrapper ">
+                            <button class="icon">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <input placeholder="Search..." class="input" name="text" type="text">
+                        </div>
+
+                       
+                        <span class="ms-3"><i class="bi bi-bag-check-fill" onclick="window.location.href='cart.html';"></i></span>&nbsp; <span><sup>(0)</sup></span>
+                        <a href="signin.html" class="ms-3">Account</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-------------------------------- navbar ends here  ---------------------------->
+
+
+    <!------------------------------- product section starts here ----------------------------------------->
+    <section class="our_product mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top_heading text-center">
+                        <p>Product Detail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="product_detail">
+        <div class="container">
+            <div class="row mt-5">
+
+                <!------------------------------------ left side starts here -------------------------->
+                <div class="col-md-12 col-lg-5 col-xl-5 col-xxl-5 mt-3 pb-5">
+                    <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(img1.jpg)">
+
+                        <img src="img1.jpg" class="img-fluid" id="imagebox" />
+
+                    </figure>
+                    <div class="smallimg">
+                        <div class="row mt-2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="img2.jpg" alt="" class="img-fluid" onclick="clickme(this)">
+                                </div>
+                                <div class="item">
+                                    <img src="img1.jpg" alt="" class="img-fluid" onclick="clickme(this)">
+                                </div>
+                                <div class="item">
+                                    <img src="img2.jpg" alt="" class="img-fluid" onclick="clickme(this)">
+                                </div>
+                                <div class="item">
+                                    <img src="img1.jpg" alt="" class="img-fluid" onclick="clickme(this)">
+                                </div>
+                                <div class="item">
+                                    <img src="img2.jpg" alt="" class="img-fluid" onclick="clickme(this)">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------ left side ends here -------------------------->
+
+
+                <!--------------------------------- right side starts here ----------------------------->
+                <div class="col-md-12 col-lg-7 col-xl-7 col-xxl-7 mt-3 pb-5">
+                    <div class="product_name">
+                        <h1>Denium Jacket</h1>
+                        <h5>₹&nbsp;799.00</h5>
+                        <span class="text-muted"> MRP<strike> (₹&nbsp;1000)</strike></span> <span
+                            class="text-danger">₹&nbsp;200&nbsp;Off</span>
+                        <p>Inclusive with all taxes.</p>
+                        <hr>
+
+                        <div class="size_choose">
+                            <h5>Size :</h5>
+                            <div class="sizes">
+                                <p>XS</p>
+                                <p>S</p>
+                                <p>M</p>
+                                <p>L</p>
+                                <p>XL</p>
+                                <p>XXL</p>
+                            </div>
+                        </div>
+                        <div class="quantity mt-4">
+                            <h5>Quantity :</h5>
+                            <p class="countings">
+                                <span class="minus" id="minus1">-</span> &nbsp;
+                                <input id="qty1" type="text" value="1" class="qty text-center" /> &nbsp;
+                                <span class="add" id="add1">+</span>
+                            </p>
+
+                        </div>
+                        <div class="buy_button mt-3">
+                            <button onclick="window.location.href='cart.html';" class="mt-3">Buy Now</button>
+                            <button onclick="window.location.href='dashboardwishlist.html';" class="mt-3 wishbutton">Add to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------- right side ends here ----------------------------->
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!------------------------------- product section ends here ----------------------------------------->
+
+
+
+    <!------------------------------- more about product section starts here  -------------------------------------->
+    <section class="more_about_product  mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Overview</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review"
+                                type="button" role="tab" aria-controls="review" aria-selected="false">Review</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active pt-4" id="home" role="tabpanel"
+                            aria-labelledby="home-tab">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis deleniti inventore a
+                                provident animi officia asperiores explicabo aliquid illo sapiente, accusamus, aliquam
+                                omnis tenetur?
+                                Aspernatur minus suscipit voluptatum atque et, soluta ipsam nihil iusto cupiditate earum
+                                nulla qui
+                                voluptates eius ipsa obcaecati debitis voluptatem voluptas illum mollitia porro sed
+                                temporibus.</p>
+                        </div>
+                        <div class="tab-pane fade pt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam aliquam expedita
+                                excepturi libero fugiat, ratione officia eaque cum eligendi ipsum! Sunt hic, repellat
+                                provident
+                                accusantium officia culpa doloremque tempore qui officiis iste. Harum sint ut nihil
+                                voluptatibus minima
+                                eveniet.</p>
+                        </div>
+                        <div class="tab-pane fade pt-4" id="review" role="tabpanel" aria-labelledby="review-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <h3>Ratings <span class="fa fa-star checked"></span></h3>
+                                            <div class="col-md-4 col-sm-4 col-12">
+                                                <span class="ratingcount">4</span> &nbsp;&nbsp;<i
+                                                    class="bi bi-star-fill ratingcountstar"></i>
+                                                <p>14.8k Verified Buyers</p>
+                                                <div class="peoplebox">
+                                                    <p class="fw-bold">WHAT CUSTOMERS SAID</p>
+                                                    <P>Fit</P>
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="example 1px high" aria-valuenow="25"
+                                                        aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+                                                        <div class="progress-bar bg-success" style="width: 90%"></div>
+                                                    </div>
+                                                    <p>Just Right(78%)</p>
+                                                    <P>Length</P>
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="example 1px high" aria-valuenow="25"
+                                                        aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+                                                        <div class="progress-bar bg-success" style="width: 90%"></div>
+                                                    </div>
+                                                    <p>Just Right(84%)</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-1 col-sm-1 hiddencol">
+                                                <div class="d-flex" style="height: 280px;">
+                                                    <div class="vr"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-7 col-sm-7 col-12">
+                                                <div class="ratingprogress">
+                                                    <span class="text-muted">5 <i
+                                                            class="bi bi-star-fill ratingcountstar"></i>Rating</span>
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="example 1px high" aria-valuenow="25"
+                                                        aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+                                                        <div class="progress-bar bg-success" style="width: 90%"></div>
+                                                    </div>
+                                                    <p class="mb-0">7468</p>
+                                                    <span class="text-muted">4 <i
+                                                            class="bi bi-star-fill ratingcountstar"></i>Rating</span>
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="example 1px high" aria-valuenow="25"
+                                                        aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+                                                        <div class="progress-bar bg-danger" style="width: 70%"></div>
+                                                    </div>
+                                                    <p class="mb-0">6000</p>
+                                                    <span class="text-muted">3 <i
+                                                            class="bi bi-star-fill ratingcountstar"></i>Rating</span>
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="example 1px high" aria-valuenow="25"
+                                                        aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+                                                        <div class="progress-bar bg-primary" style="width: 60%"></div>
+                                                    </div>
+                                                    <p class="mb-0">5342</p>
+                                                    <span class="text-muted">2 <i
+                                                            class="bi bi-star-fill ratingcountstar"></i>Rating</span>
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="example 1px high" aria-valuenow="25"
+                                                        aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+                                                        <div class="progress-bar bg-warning" style="width: 50%"></div>
+                                                    </div>
+                                                    <p class="mb-0">500</p>
+                                                    <span class="text-muted">1 <i
+                                                            class="bi bi-star-fill ratingcountstar"></i>Rating</span>
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="example 1px high" aria-valuenow="25"
+                                                        aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+                                                        <div class="progress-bar bg-info" style="width: 20%"></div>
+                                                    </div>
+                                                    <p class="mb-0">50</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!------------------------------- more about product section ends here  -------------------------------------->
+
+
+
+
+
+
+
+
+ <!----------------------------- you may also like section starts here --------------------------->
+ <section class="you may also like mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mt-5 text-center">
+                <div class="heading">
+                    <h2>
+                        You may also like
+                    </h2>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-5">
+                <div class="product-detail">
+                    <div class="product-img">
+                        <a href="product.html"> <img src="img1.jpg" class="img-fluid" alt=""> </a>
+                    </div>
+                    <div class="product-detail-text p-3">
+                        <h5>Denium Jacket</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, quidem.</p>
+                        <hr>
+                        <div class="price-div mt-3">
+                            <p>₹199.00</p>
+                            <div class="product-link" id="hide">
+                                <button>Add to cart &nbsp;<i class="bi bi-cart-fill"></i></button>
+                            </div>
+                            <div class="product-add" id="show">
+                                <p class="countings">
+                                    <span class="minus" id="minus1">-</span> &nbsp;
+                                    <input id="qty1" type="text" value="1" class="qty text-center" /> &nbsp;
+                                    <span class="add" id="add1">+</span>
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-5">
+                <div class="product-detail">
+                    <div class="product-img">
+                        <a href="product.html"> <img src="img2.jpg" class="img-fluid" alt=""> </a>
+                    </div>
+                    <div class="product-detail-text p-3">
+                        <h5>Denium Jacket</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, quidem.</p>
+                        <hr>
+                        <div class="price-div mt-3">
+                            <p>₹199.00</p>
+                            <div class="product-link" id="hide">
+                                <button>Add to cart &nbsp;<i class="bi bi-cart-fill"></i></button>
+                            </div>
+                            <div class="product-add" id="show">
+                                <p class="countings">
+                                    <span class="minus" id="minus1">-</span> &nbsp;
+                                    <input id="qty1" type="text" value="1" class="qty text-center" /> &nbsp;
+                                    <span class="add" id="add1">+</span>
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-5">
+                <div class="product-detail">
+                    <div class="product-img">
+                        <a href="product.html"> <img src="img1.jpg" class="img-fluid" alt=""> </a>
+                    </div>
+                    <div class="product-detail-text p-3">
+                        <h5>Denium Jacket</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, quidem.</p>
+                        <hr>
+                        <div class="price-div mt-3">
+                            <p>₹199.00</p>
+                            <div class="product-link" id="hide">
+                                <button>Add to cart &nbsp;<i class="bi bi-cart-fill"></i></button>
+                            </div>
+                            <div class="product-add" id="show">
+                                <p class="countings">
+                                    <span class="minus" id="minus1">-</span> &nbsp;
+                                    <input id="qty1" type="text" value="1" class="qty text-center" /> &nbsp;
+                                    <span class="add" id="add1">+</span>
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-5">
+                <div class="product-detail">
+                    <div class="product-img">
+                        <a href="product.html"> <img src="img2.jpg" class="img-fluid" alt=""> </a>
+                    </div>
+                    <div class="product-detail-text p-3">
+                        <h5>Denium Jacket</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, quidem.</p>
+                        <hr>
+                        <div class="price-div mt-3">
+                            <p>₹199.00</p>
+                            <div class="product-link" id="hide">
+                                <button>Add to cart &nbsp;<i class="bi bi-cart-fill"></i></button>
+                            </div>
+                            <div class="product-add" id="show">
+                                <p class="countings">
+                                    <span class="minus" id="minus1">-</span> &nbsp;
+                                    <input id="qty1" type="text" value="1" class="qty text-center" /> &nbsp;
+                                    <span class="add" id="add1">+</span>
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------------------------- you may also like  section ends here --------------------------->
+
+
+
+
+
+
+    <!----------------------------------- footer section starts here  -------------------------------------->
+    <section class="footer mt-5 pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>About Us</h5>
+                        <div class="footer-text mt-4">
+                            <p>Creativity, Positive Change & Self Expression</p>
+                            <a href="#">Learn More</a>
+                            <p class="mt-3">&COPY;&nbsp;2023, All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Policies</h5>
+                        <div class="footer-links mt-4">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="privacy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="shippingpolicy.html">Shipping Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <div class="footer-area">
+                        <h5>New Letter</h5>
+                        <div class="footer-text mt-4">
+                            <p>Sign up to stay updated about upcoming launches & offers!</p>
+                            <div class="newletter-input mt-3 mb-4">
+                                <input type="email" class="inpemail p-1" placeholder="Enter your email" name=""
+                                    id=""><span><input type="button" class="inpbtn" value="Subscribe"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Follow Us</h5>
+                        <div class="footer-text  mt-4">
+                            <p>Stay in touch!</p>
+                            <div class="footer-sociallinks mt-3">
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- footer section ends here  -------------------------------------->
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        // progress page change price script starts here 
+        const rangeInput = document.querySelectorAll(".range-input input"),
+            priceInput = document.querySelectorAll(".price-input input"),
+            range = document.querySelector(".slider .progress");
+        let priceGap = 1000;
+        priceInput.forEach(input => {
+            input.addEventListener("input", e => {
+                let minPrice = parseInt(priceInput[0].value),
+                    maxPrice = parseInt(priceInput[1].value);
+
+                if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
+                    if (e.target.className === "input-min") {
+                        rangeInput[0].value = minPrice;
+                        range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                    } else {
+                        rangeInput[1].value = maxPrice;
+                        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                    }
+                }
+            });
+        });
+        rangeInput.forEach(input => {
+            input.addEventListener("input", e => {
+                let minVal = parseInt(rangeInput[0].value),
+                    maxVal = parseInt(rangeInput[1].value);
+                if ((maxVal - minVal) < priceGap) {
+                    if (e.target.className === "range-min") {
+                        rangeInput[0].value = maxVal - priceGap
+                    } else {
+                        rangeInput[1].value = minVal + priceGap;
+                    }
+                } else {
+                    priceInput[0].value = minVal;
+                    priceInput[1].value = maxVal;
+                    range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+                    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+                }
+            });
+        });
+        // progress page change price script ends here 
+
+
+
+        // small image carousel script starts here 
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 4,
+                },
+                600: {
+                    items: 4,
+                },
+                1000: {
+                    items: 4,
+                }
+            }
+        });
+
+        // small image carousel script ends here 
+
+
+        // to plus and minus add product to in cart script starts here 
+        $(function () {
+            $(".minus,.add").on("click", function () {
+                var $qty = $(this).closest("p").find(".qty"),
+                    currentVal = parseInt($qty.val()),
+                    isAdd = $(this).hasClass("add");
+                !isNaN(currentVal) &&
+                    $qty.val(
+                        isAdd ? ++currentVal : currentVal > 1 ? --currentVal : currentVal
+                    );
+            });
+        });
+        // to plus and minus add product to in cart script ends here
+    </script>
+</body>
+
+</html>

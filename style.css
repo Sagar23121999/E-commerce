@@ -1,0 +1,1752 @@
+/* Google fonts link  */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Balsamiq+Sans&family=Josefin+Sans:ital,wght@0,400;1,300&family=Montserrat&family=Open+Sans&family=Public+Sans&display=swap');
+
+/* Bootstrap icons link  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    scroll-behavior: smooth !important;
+
+}
+
+
+body{
+    overflow-x: hidden;
+}
+/*-------------------------------------- navbar css starts here ------------------- */
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+
+}
+
+button.navbar-toggler {
+    background-color: #101125;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-brand:hover {
+    color: #ff6122;
+}
+
+.navbar {
+    background-color: #101125;
+    /* box-shadow: 1px 2px 4px 0px #d5d5d5; */
+}
+
+.offcanvas-header {
+    background-color: #101125;
+    color: #fff;
+}
+
+.offcanvas-body {
+    background-color: #101125;
+    color: #fff;
+}
+
+#menu .nav-item a:hover {
+    color: #ff6122;
+}
+
+#menu .nav-item a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#menu .nav-item ul li {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+
+
+.toggleicon i {
+    color: #fff;
+    font-size: 26px;
+
+}
+
+@media (max-width:762px) {
+    div#navbarOffcanvasLg {
+        width: 70% !important;
+    }
+}
+
+#menu li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#menu a {
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#menu li>ul {
+    position: absolute;
+    top: 10;
+}
+
+#menu li:hover>ul {
+    display: block;
+}
+
+#menu li:hover>ul:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 10px;
+    height: 100%;
+}
+
+
+
+a.dropdown-item {
+    color: #000000 !important;
+    background-color: #fff !important;
+}
+
+a.dropdown-item:hover {
+    background-color: #ff6122;
+    color: #fff;
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 18px !important;
+}
+
+.login a:hover {
+    color: #ff6122 !important;
+}
+
+.login span{
+    font-size: 18px;
+}
+
+/*---------- input search icon starts here ------- */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+  }
+  i.bi.bi-bag-check-fill{
+    cursor: pointer;
+  }
+  .input {
+    border-style: none;
+    height: 30px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    background-color: transparent;
+    /* box-shadow: 0px 0px 3px #f3f3f3; */
+    padding-right: 40px;
+    color: #fff;
+  }
+  
+  .input::placeholder,
+  .input {
+    font-size: 17px;
+  }
+  
+  .input::placeholder {
+    color: #8f8f8f;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+    margin-top: -8px;
+  }
+  .icon i{
+    color: #fff;
+  }
+  .icon:focus ~ .input,
+  .input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #7e4fd4;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+
+  @media (max-width:990px) {
+    .input-wrapper{
+        display: none;
+    }
+  }
+/*---------- input search icon ends here ------- */
+
+  
+/*-------------------------------------- navbar css ends here ------------------- */
+
+
+
+/*----------------------------------- main-section starts here ------------------------ */
+
+.main-section{
+    background-color: lavender;
+}
+
+.main-section .container-fluid{
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+.text-area h1 span::before{
+    content: '';
+    /* color: #aa3939; */
+    color: #ff6122;
+    animation: profile 5s infinite;
+  }
+  @keyframes profile {
+    0% { content: 'Brands'}
+    50% { content: 'Purchase'}
+    100% { content: 'Best Seller'}
+  }
+
+  .image-section{
+    background-image: url("img1.jpg");
+    width: 100%;
+    height: 55vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center center;
+    clip-path:polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+  }
+
+  .shop-button {
+    background-color: #101125;
+    width: max-content;
+    padding: 8px 23px;
+  }
+
+  .shop-button a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .text-area p{
+    text-align: justify;
+  }
+
+  @media (max-width: 990px) {
+    .image-section{
+        display: none;
+    }
+    .text-section{
+        text-align: center;
+    }
+    .shop-button{
+        margin: auto;
+    }
+  }
+
+   @media (max-width: 990px) {
+    .text-section{
+       background-image: url("shirt-mockup-concept-with-plain-clothing.jpg");
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+       height: auto;
+
+    }
+    .text-area{
+        padding: 13px;
+    }
+   }
+/*----------------------------------- main-section ends here ------------------------ */
+
+
+
+/*------------------------------------- why shop us section css starts here ------------------------------ */
+.shop-box-text > :first-child{
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.shop-box{
+    background-color: #101125;
+    border-radius: 8px;
+    color: #ffffff;
+}
+/*------------------------------------- why shop us section css ends here ------------------------------ */
+
+/*---------------------------------- top categories css starts here -------------------------------- */
+.heading h2{
+    color: #101125;
+}
+.product-img{
+    overflow: hidden;
+}
+
+.product-img img{
+    object-fit: cover;
+    height: 300px;
+    width: 400px;
+    transition: 1s ease;
+}
+.product-img img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.product-detail{
+    /* border: 1px solid #e8e8e8; */
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)
+}
+
+.product-detail-text p{
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.price-div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.product-link button{
+    padding: 3px 5px;
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #101125;
+    cursor: pointer;
+    border: none !important;
+}
+
+
+.price-div p{
+    margin-bottom: 0;
+    color: #ff6122;
+}
+
+.countings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    width: fit-content;
+  }
+  
+  
+  input#qty1 {
+    width: 30px;
+    padding: 3px;
+    border: none;
+    background-color: white;
+  }
+  input#qty1:focus-visible{
+   outline: none;
+  }
+  .minus {
+    cursor: pointer;
+    background-color: #101125;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+  
+  }
+  
+  .add {
+    cursor: pointer;
+    background-color: #101125;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .product-add{
+    display: none;
+}
+/*---------------------------------- top categories css ends here -------------------------------- */
+
+/*----------------------------- new arrivals section css starts here ------------------------------- */
+.new-arrivals{
+    background-color: lavender;
+}
+
+.new-arrival-heading p{
+    font-size: 43px;
+    color: #101125;
+}
+
+.new-arrival-shop a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.new-arrival-shop{
+    background-color: #101125;
+    width: fit-content;
+    padding: 8px 23px;
+}
+/*----------------------------- new arrivals section css ends here ------------------------------- */
+
+/*------------------------------- testinomial section css starts here ---------------------------------- */
+.testinomial-area i{ 
+  font-size: 43px;
+  color: #9ca3af;
+}
+
+.testinomial-area p{
+    text-align: justify;
+}
+
+.testinomial-area h6{
+  font-weight: 600;
+}
+
+/*------------------------------- testinomial section css ends here ---------------------------------- */
+
+
+/*---------------------------------- footer section css starts here -------------------------------------- */
+.footer{
+    background-color: #101125;
+    color: #ffffff;
+}
+
+.footer-area{
+    text-align: left;
+}
+.footer-area h5{
+    font-weight: 500;
+}
+
+.footer-area p{
+    margin-bottom: 7px;
+}
+
+.footer-area a{
+ color: #ffffff;
+
+}
+
+.footer-links ul{
+padding-left: 0;
+}
+
+.footer-links ul li{
+   list-style: none;
+   margin-top: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+}
+
+.newletter-input .inpbtn{
+  position: absolute;
+  width: fit-content;
+  border-color: #101125;
+  background-color: #ff6122;
+  color: #fff;
+  padding: 5px;
+  margin-top: -1px;
+  border-radius: 0px !important;
+}
+
+.newletter-input .inpemail:focus-visible{
+  outline: none;
+}
+
+.footer-sociallinks ul{
+    display: flex;
+    column-gap: 15px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.footer-sociallinks ul li{
+    list-style: none;
+}
+
+.footer-sociallinks ul li a{
+    text-decoration: none;
+    padding: 7px;
+    border: 1px solid #fff;
+}
+
+.footer-sociallinks ul li a:hover{
+ background-color: #ff6122;
+ color: #ffffff;
+ transition-duration: 1s;
+}
+.footer-sociallinks ul li a i{
+    font-size: 15px;
+}
+/*---------------------------------- footer section css ends here -------------------------------------- */
+
+
+/*------------------------------------ category page css starts here -------------------------------------- */
+
+.top_heading p{
+     font-size: 43px;
+}
+
+.our_product{
+    background-color: lavender;
+}
+
+.accordion{
+    background-color: none !important;
+    
+}
+.accordion-button:not(.collapsed){
+    background-color: #fff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+  
+}
+
+
+/*------------ radio buttons css starts here ---------- */
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .radio-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .radio-button input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .radio-circle::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .radio-button input[type="radio"]:checked + .radio-circle::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .radio-button input[type="radio"]:checked + .radio-circle::before {
+    background-color: #101125;
+  }
+  
+
+  
+  .radio-label {
+    font-size: 16px;
+
+  }
+    .radio-button:hover .radio-circle {
+    border-color: #555;
+  }
+  
+  .radio-button:hover input[type="radio"]:checked + .radio-circle::before {
+    background-color: #555;
+  }
+  
+/*------------ radio buttons css ends here ---------- */
+
+
+
+/*------------- price slider css starts ---------- */
+  .price-input{
+    width: 100%;
+    display: flex;
+    margin: 30px 0 35px;
+  }
+  .price-input .field{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+  }
+  .field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 19px;
+    margin-left: 12px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #999;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .price-input .separator{
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider{
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .slider .progress{
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #101125;
+  }
+  
+  
+  .range-input{
+    position: relative;
+  }
+  .range-input input{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #101125;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+  input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #101125;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+  
+div#checks2 {
+    margin-top: -30px;
+}
+/*------------- price slider css ends ---------- */
+
+
+.sort_filter:focus-visible{
+    outline: none;
+}
+
+select:focus{
+   box-shadow: none !important;
+   border-color: #e8e8e8 !important;
+}
+
+/*------------------------------------ category page css ends here -------------------------------------- */
+
+
+/*--------------------------------- product page css starts here ---------------------------------------- */
+figure.zoom {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: zoom-in;
+  border: 1px solid #e8e8e8;
+  box-shadow: 2px 4px 5px 0px #ccc;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+figure.zoom img:hover {
+  opacity: 0;
+}
+
+figure.zoom img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sizes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.sizes p{
+  margin: 13px;
+  border: 1px solid #ccc;
+  padding: 8px 18px;
+  font-size: 18px;
+}
+
+.sizes p:hover{
+  background-color: #101125;
+  color: #fff;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.buy_button button{
+  width: 100%;
+  padding: 8px 23px;
+  background-color: #101125;
+  color: #fff;
+  border: none;
+  font-size: 23px;
+}
+
+.product_name{
+  padding: 0px 50px;
+}
+
+@media (max-width:990px) {
+  .product_name{
+    padding: 0px 0px;
+  }
+  
+}
+
+.wishbutton{
+  background-color: lavender !important;
+  color: #000 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: white;
+  background-color: #101125 !important;
+}
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.nav-item .nav-link:hover{
+  color: #000000;
+}
+
+.bi .bi-star-fill{
+  color: orange;
+}
+.checked{
+  color: orange;
+}
+
+i.bi.bi-star-fill.ratingcountstar{
+  color: orange;
+}
+
+
+@media (max-width:576px) {
+  .hiddencol{
+    display: none;
+  }
+}
+
+
+.tab-pane p{
+  text-align: justify;
+}
+
+/*--------------------------------- product page css ends here ---------------------------------------- */
+
+
+
+/*------------------------------------------------------ contact_us page css starts here  ----------------------------------------------------------*/
+/*---------------------------------- get in touch css starts here --------------------------- */
+
+.getpara {
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+
+@media (max-width:400px) {
+  .getpara {
+    font-size: 32px;
+  }
+}
+
+.gettouchtext {
+  color: #494f66;
+}
+
+.getsubpara {
+  color: #494f66;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: normal;
+  font-weight: 500;
+  letter-spacing: 0.33px;
+}
+
+.contactsubtext {
+  color: #494f66;
+}
+
+/*---------------------------------- get in touch css ends here --------------------------- */
+
+
+/*------------------------ map box container css starts here ----------------------------------- */
+.map-box iframe {
+  border-radius: 10px;
+}
+
+/*------------------------ map box container css ends here ----------------------------------- */
+
+
+/*---------------------------------- send message css starts here ------------------------------------ */
+.sendmessage {
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+
+
+@media (max-width:400px) {
+  .sendmessage {
+    font-size: 32px;
+  }
+}
+
+.sendmessagetext {
+  color: #494f66;
+}
+
+
+.messageinput {
+  width: 100%;
+  border: none !important;
+  font-size: 14px;
+  padding: 17px 25px;
+  border-radius: 36px;
+  background-color: #fff !important;
+  box-shadow: 1px 2px 3px 0px lightgray !important;
+}
+
+textarea {
+  width: 100%;
+  border: none !important;
+  font-size: 14px;
+  padding: 17px 25px;
+  border-radius: 36px;
+  background-color: #fff !important;
+  box-shadow: 1px 2px 3px 0px lightgray !important
+}
+
+.sendbutton {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.sendbutton button{
+  border: none !important;
+  padding: 10px 40px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: #000000;
+}
+.sendbutton button:hover {
+  background-color: #101125 !important;
+  transition-duration: 0.3s;
+}
+/*---------------------------------- send message css ends here ------------------------------------ */
+
+/*------------------------------------------------------ contact_us page css ends here  ----------------------------------------------------------*/
+
+/*------------------------------------------ terms & contion and policies page css starts here ---------------------------- */
+.headterm P{
+  font-size: 16px;
+}
+
+.policyul li{
+margin-top: 13px;
+}
+/*------------------------------------------ terms & contion and policies page css ends here ---------------------------- */
+
+
+.mainblogbox {
+  border: 1px solid #e1e5eb;
+}
+
+.blogimgsection {
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: lavender;
+}
+
+.blogimgsection img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.blogimgsection:hover img {
+  transform: scale(1.1);
+  opacity: 0.2;
+}
+
+.blogdetaildate {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: #222222;
+}
+
+.bloglink {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: normal;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.bloglink a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.bloglink a:hover {
+  color: #101125;
+}
+
+.readmore {
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 26px;
+  color: #222222;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.readmore:hover {
+  color: #101125;
+}
+
+.mainblogboxes {
+  border: 1px solid #e1e5eb;
+}
+
+.subpara {
+  color: #848484;
+}
+
+.admintext {
+  color: #848484;
+}
+
+.blogrightside {
+  margin-left: 40px;
+}
+
+.dash {
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+}
+
+@media (max-width:992px) {
+  .blogrightside {
+      margin-left: 0px;
+  }
+
+}
+
+.searchheading {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
+
+/* search box css starts here  */
+.blogrightside .search-form .form-group {
+  position: relative;
+  margin: 0px;
+}
+
+.blogrightside .search-form .form-group input[type='search'] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #101125;
+  font-size: 15px;
+  color: #848484;
+  padding: 10px 50px 10px 20px;
+  transition: all 500ms ease;
+  outline: none;
+}
+
+.blogrightside .search-form .form-group button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 16px;
+  color: #222;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 500ms ease;
+  border: none;
+}
+
+/* search box css ends here  */
+
+
+.categoryhead {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.categorieslist {
+  list-style: circle;
+  color: #848484;
+}
+
+
+.categorieslist li {
+  padding-top: 6px;
+}
+
+.categorieslist li a {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.categorieslist li a:hover {
+  color: #101125;
+
+}
+
+.categorieslist li:hover {
+  color: #101125 !important;
+}
+
+.popularposthead {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.popularsubposts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.popularsubtext a {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #222;
+}
+
+.popularsubtext a:hover {
+  color: #101125;
+}
+
+.popularpostimg {
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: auto;
+  overflow: hidden;
+
+
+}
+
+.popularimagebox {
+  background-color: lavender;
+  height: fit-content !important;
+}
+
+.popularpostimg:hover {
+  opacity: 0.2;
+  transition-duration: 1s;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------- blog pages css ends here ------------------------------------------------------------------------------------------------ */
+
+
+/*--------------------------------------- sign in, sign up, forgot password page css starts here ---------------------------- */
+.sign{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+ .input-form .form-group {
+  position: relative;
+  margin: 0px;
+}
+ .input-form .form-group input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #101125;
+  font-size: 15px;
+  color: #848484;
+  padding: 10px 50px 10px 20px;
+  transition: all 500ms ease;
+  outline: none;
+}
+
+.inputbutton input{
+  width: 100%;
+  padding: 10px;
+  background-color: #101125;
+  border: none;
+  color: #fff;
+}
+.anchorclass a{
+  color: #494f66;
+}
+
+/*--------------------------------------- sign in, sign up, forgot password page css ends here ---------------------------- */
+
+
+/*---------------------------------------- cart page css starts here -------------------------------- */
+
+.carthead p {
+  font-size: 21px;
+  font-weight: 600;
+  color: #101125;
+}
+
+.cartbox {
+  padding: 23px;
+  border-radius: 6px;
+  border: 1px solid #101125;
+}
+
+i.bi.bi-x-octagon-fill {
+  font-size: 21px;
+  cursor: pointer;
+  color: #dc3545;
+}
+
+
+.downbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+@media (max-width:450px) {
+  .downbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .downbox .proceed {
+    margin-top: 15px;
+  }
+}
+
+.downbox .return {
+  border: none;
+  text-decoration: none;
+  color: #000000;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+}
+
+.downbox .return:hover {
+  background-color: #101125;
+  color: white;
+}
+
+.downbox .proceed {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #101125;
+  border: none;
+}
+
+.carttotal p {
+  font-size: 21px;
+  font-weight: 600;
+  color: #101125;
+
+}
+
+.applyinput {
+  outline: none;
+  border: 1px solid #101125;
+}
+.applyinput:focus{
+box-shadow: none !important;
+border: 1px solid #101125 !important;
+}
+.applybtn {
+  background-color: #101125 !important;
+  color: white !important;
+}
+
+.promoprice {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.promoprice h6 {
+  font-weight: 600;
+}
+
+.finalpromoprice {
+  font-weight: 600;
+  color: #101125;
+  font-size: 18px;
+}
+
+.promoarea {
+  background-color: lavender;
+  padding: 23px;
+}
+
+/*---------------------------------------- cart page css ends here -------------------------------- */
+
+
+
+
+
+/*---------------------------------------------- checkout page css starts here ------------------------------------------- */
+.checkout ul li {
+  margin-left: 23px !important;
+  margin-right: 23px !important;
+  margin-top: 23px !important;
+}
+
+.checkout ul li button {
+  border: 1px solid #ccc !important;
+  box-shadow: 1px 2px 3px 0px #e8e8e8;
+}
+
+@media (max-width:425px) {
+  ul#pills-tab {
+    justify-content: left !important;
+  }
+}
+
+.deliveryhead {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.deliveryhead p {
+  font-size: 21px;
+  font-weight: 600;
+  color: #101125;
+
+}
+
+.deliveryhead button {
+  background-color: #101125;
+  color:  #fff;
+  border: none;
+}
+
+.deliveryhead button:hover {
+  background-color: #101125;
+  color:  #fff;
+  border: none;
+}
+
+.deliveryaddress {
+  background-color: lavender;
+  padding: 23px;
+  border-radius: 6px;
+  color: white;
+}
+
+.addresscheckout {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  padding: 23px;
+  color: black;
+}
+
+#yes {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #101125;
+  appearance: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+
+}
+
+#yes:checked {
+  background-color: #101125;
+}
+
+
+.label label {
+  background-color: #101125;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.saveadd {
+  background-color: #101125 !important;
+  color: white !important;
+}
+
+.saveadd:hover {
+  background-color: #101125 !important;
+  color: white !important;
+}
+
+.standard {
+  font-size: 21px;
+  font-weight: 500;
+  color: #101125;
+}
+.colorpara{
+  color: #101125;
+}
+.deliveryoption {
+  background-color: lavender;
+  color: white;
+  padding: 23px;
+  border-radius: 4px;
+}
+
+
+.paymenthead p {
+  font-size: 21px;
+  font-weight: 600;
+  color: #101125;
+}
+
+
+.cashpayment {
+  background-color: lavender !important;
+  color: white !important;
+}
+
+.ordersummary h5 {
+  color: #101125;
+}
+
+.ordersummary {
+  border: 1px solid #e8e8e8;
+  padding: 13px;
+  background-color: lavender;
+}
+
+.ordersummarylist {
+  height: 150px;
+  overflow-y: scroll;
+  padding: 8px;
+}
+
+.summarylist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.summarytotal {
+  color: #101125;
+}
+
+.modal-body input:focus{
+  box-shadow: none !important;
+  border-color: #101125 !important;
+}
+.accordion-item:first-of-type .accordion-button{
+  background-color: #101125 !important;
+  color: #fff !important;
+}
+/*---------------------------------------------- checkout page css ends here ------------------------------------------- */
+
+
+/*---------------------------------------------- all dashboard page css starts here -------------------------------------- */
+.profile-pic {
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.profile-pic input {
+  display: none;
+}
+
+.profile-pic img {
+  position: absolute;
+  object-fit: cover;
+  width: 165px;
+  height: 165px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, .35);
+  border-radius: 100px;
+  z-index: 0;
+}
+
+.profile-pic .-label {
+  cursor: pointer;
+  height: 165px;
+  width: 165px;
+}
+
+.profile-pic:hover .-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 10000;
+  color: #fafafa;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 100px;
+  margin-bottom: 0;
+}
+
+.profile-pic span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+}
+
+
+
+
+.dashboardmenu .nav-link {
+  color: #101125;
+  margin-top: 13px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dashboardmenu .nav-link:hover{
+  background-color: #101125;
+  color: #fff;
+  border-radius: 4px;
+}
+.userdetail {
+  border: 1px solid #ccc;
+  padding: 23px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 5px 0px #ccc;
+}
+
+.userimage img {
+  border: 4px solid #ccc;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+
+
+.editimg {
+  text-align: center;
+  margin-top: -15px !important;
+  margin-left: 70px;
+}
+
+.editimg i {
+  cursor: pointer;
+}
+
+.username h5 {
+  font-weight: 600;
+  color: #101125;
+}
+
+.username h6 {
+  color: #101125;
+  font-weight: 500;
+}
+
+.dashboardmenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardmenu button {
+  text-align: start;
+  color: black;
+  font-size: 18px;
+  margin-top: 13px;
+}
+
+.dashboardmenu button:hover {
+  text-align: start;
+  color: black;
+}
+
+.dashboardsection h2 {
+  font-weight: 500;
+}
+
+.rightdashboardpanel {
+  background-color: lavender;
+  padding: 23px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 5px 0px #ccc;
+
+}
+
+.totalorder {
+  border-radius: 6px;
+  background-color: white;
+  padding: 13px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 2px 3px 4px 0px #101125;
+}
+
+.totalorder i {
+  font-size: 50px;
+  color: #101125;
+}
+
+.deliverddate::marker {
+  color: green;
+  font-size: 21px;
+}
+
+.cardproductdetail {
+  cursor: pointer;
+}
+
+.wishuser {
+  background-color: white;
+  box-shadow: 2px 4px 5px 0px #ccc;
+}
+
+.usercart a {
+  text-decoration: none;
+  color: #101125;
+}
+
+.addnewaddress {
+  background-color: #24aeb1;
+}
+
+.editbtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editbtn .edit:hover {
+  background-color: #101125;
+  color: white;
+}
+
+.editbtn .remove:hover {
+  background-color: #101125;
+  color: white;
+}
+
+
+.profileeditbtn button {
+  text-decoration: none;
+  color: #101125;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.profileeditbtn button:hover {
+  text-decoration: none;
+  color: #101125;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.usersection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+
+.updatelogindetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.updatelogindetail button {
+  text-decoration: none;
+  color: #101125;
+}
+
+.updatelogindetail button:hover {
+  background-color: #101125;
+  color: white;
+}
+
+
+.progress-bar {
+  width: 100%;
+  background-color: #101125 !important;
+}
+
+.one,
+.two,
+.three,
+.four {
+  position: absolute;
+  margin-top: -10px;
+  z-index: 1;
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+
+}
+
+.two {
+  left: 65%;
+}
+
+.three {
+  left: 80%;
+}
+
+.four {
+  left: 96%;
+}
+
+@media (max-width:992px) {
+  .two {
+    left: 35%;
+  }
+
+  .three {
+    left: 65%;
+  }
+
+  .four {
+    left: 92%;
+  }
+
+}
+
+.primary-color {
+  background-color: #101125;
+}
+
+.ordertracksname {
+  font-size: 13px;
+}
+
+/*--------------------------------------------- all dashboard pages css ends here ----------------------------------------- */

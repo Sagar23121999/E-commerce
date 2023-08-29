@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-Checkout</title>
+
+    <!-- External css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External js file link  -->
+    <script src="script.js"></script>
+
+     <!-- Bootstrap links -->
+     <link rel="stylesheet" href="bootstrap.min.css">
+     <script src="bootstrap.bundle.min.js"></script>
+ 
+     <!-- owl carousel links -->
+     <link rel="stylesheet" href="owl.carousel.min.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+     <script src="jquery.min.js"></script>
+     <script src="owl.carousel.js"></script>
+
+</head>
+
+<body>
+    <!---------------------- navbar starts here  --------------------------->
+    <nav class="navbar  navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand " href="index.html">EduQRCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg">
+                <span class="toggleicon"><i class="bi bi-text-right"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">EduQRCode</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="menu">
+                    <ul class="navbar-nav justify-content-center ms-5  flex-grow-1">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="category.html">Men</a></li>
+                                <li><a class="dropdown-item" href="category.html">Women</a></li>
+                                <li><a class="dropdown-item" href="category.html">Children</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Women
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                                <li><a class="dropdown-item" href="#">Jeans</a></li>
+                                <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
+                        </li>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blogs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex mt-2 me-3 login" role="search">
+
+                        <!-- <a href="#">Sign Up</a>&nbsp;/ &nbsp;<a href="#">Sign In</a> -->
+
+
+                        <div class="input-wrapper ">
+                            <button class="icon">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <input placeholder="Search..." class="input" name="text" type="text">
+                        </div>
+
+                       
+                        <span class="ms-3"><i class="bi bi-bag-check-fill" onclick="window.location.href='cart.html';"></i></span>&nbsp; <span><sup>(0)</sup></span>
+                        <a href="signin.html" class="ms-3">Account</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-------------------------------- navbar ends here  ------------------------------>
+
+
+
+    <!------------------------------------- checkout section starts here -------------------------------->
+    <section class="our_product mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top_heading text-center">
+                        <p>Checkout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+
+                    <ul class="nav nav-pills justify-content-center mb-3 " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-shoppingcart-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-shoppingcart" type="button" role="tab"
+                                aria-controls="pills-shoppingcart" aria-selected="true">Shopping Cart</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-deliveryaddress-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-deliveryaddress" type="button" role="tab"
+                                aria-controls="pills-deliveryaddress" aria-selected="false">Delivery Address</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-deliveryoption-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-deliveryoption" type="button" role="tab"
+                                aria-controls="pills-deliveryoption" aria-selected="false">Delivery Options</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-payment-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment"
+                                aria-selected="false">Payment Options</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-1 mt-5"></div>
+                <div class="col-lg-10 mt-5">
+                    <!---------------------------------------- tabbing system starts here -------------------------------------------->
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- shopping cart starts here  -->
+                        <div class="tab-pane fade show active" id="pills-shoppingcart" role="tabpanel"
+                            aria-labelledby="pills-shoppingcart-tab" tabindex="0">
+
+
+                            <div class="cartbox h-100">
+
+                                <div class="carthead">
+                                    <p>Shopping Cart</p>
+                                </div>
+                                <div class="table-responsive-md">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Product Name</th>
+                                                <th scope="col">Qty</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Total</th>
+
+                                                <th scope="col">Action</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img src="img1.jpg" width="100px" height="100px" alt="">
+                                                </th>
+                                                <td class="fw-bold">Clothing</td>
+                                                <td>
+                                                    <p class="countings">
+                                                        <span class="minus" id="minus1">-</span> &nbsp;
+                                                        <input id="qty1" type="text" value="1"
+                                                            class="qty text-center" /> &nbsp;
+                                                        <span class="add" id="add1">+</span>
+                                                    </p>
+                                                </td>
+                                                <td>₹199.00</td>
+                                                <td>₹199.00</td>
+
+                                                <td><i class="bi bi-x-octagon-fill"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img src="img2.jpg" width="100px" height="100px" alt="">
+                                                </th>
+                                                <td class="fw-bold">Clothing</td>
+                                                <td>
+                                                    <p class="countings">
+                                                        <span class="minus" id="minus1">-</span> &nbsp;
+                                                        <input id="qty1" type="text" value="1"
+                                                            class="qty text-center" /> &nbsp;
+                                                        <span class="add" id="add1">+</span>
+                                                    </p>
+                                                </td>
+                                                <td>₹199.00</td>
+                                                <td>₹199.00</td>
+                                                <td><i class="bi bi-x-octagon-fill"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <img src="img1.jpg" width="100px" height="100px" alt="">
+                                                </th>
+                                                <td class="fw-bold">Clothing</td>
+                                                <td>
+                                                    <p class="countings">
+                                                        <span class="minus" id="minus1">-</span> &nbsp;
+                                                        <input id="qty1" type="text" value="1"
+                                                            class="qty text-center" /> &nbsp;
+                                                        <span class="add" id="add1">+</span>
+                                                    </p>
+                                                </td>
+                                                <td>₹199.00</td>
+                                                <td>₹199.00</td>
+                                                <td><i class="bi bi-x-octagon-fill"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+                            <div class="downbox mt-5">
+                                <a href="cart.html" class="return" id="backfirst"><i class="bi bi-arrow-left"></i> &nbsp;Return to
+                                    shopping</a>
+                                <button class="proceed" id="btnfirst">Continue Delivery Address &nbsp;<i
+                                        class="bi bi-arrow-right"></i></button>
+
+                            </div>
+                        </div>
+                        <!-- shopping ends starts here  -->
+
+                        <!-- delivery address starts here  -->
+                        <div class="tab-pane fade" id="pills-deliveryaddress" role="tabpanel"
+                            aria-labelledby="pills-deliveryaddress-tab" tabindex="0">
+                            <div class="deliveryaddress">
+
+                                <div class="deliveryhead">
+                                    <p>Delivery Address</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="bi bi-plus-lg"></i>&nbsp;Add New
+                                    </button>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-4 mt-3">
+                                        <div class="addresscheckout">
+                                            <div>
+
+                                                <input id="yes" type="radio" name="s"><label for="yes"></label> &nbsp;
+                                                <span class="label">
+                                                    <label for="#">Home</label>
+                                                </span>
+                                            </div>
+                                            <div class="mt-3">
+                                                <strong>Hello</strong>
+                                                <p class="mb-1">Address : Noida, Sector-63</p>
+                                                <p class="mb-1">Pincode : 201301</p>
+                                                <p class="mb-1">Mobile : 0123456789</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="downbox mt-5">
+                                <button class="return" id="backsecond"><i class="bi bi-arrow-left"></i> &nbsp;Return to
+                                    shopping
+                                    cart</button>
+                                <button class="proceed" id="btnsecond">Continue Delivery Options &nbsp;<i
+                                        class="bi bi-arrow-right"></i></button>
+
+
+                            </div>
+                        </div>
+                        <!-- delivery address ends here  -->
+
+                        <!---- delivery options starts here --------->
+                        <div class="tab-pane fade" id="pills-deliveryoption" role="tabpanel"
+                            aria-labelledby="pills-deliveryoption-tab" tabindex="0">
+
+                            <div class="deliveryoption mt-3">
+                                <div class="row">
+                                    <div class="col-xxl-4 mt-3">
+                                        <div>
+                                            <input id="yes" type="radio" name="s"><label for="yes"></label> &nbsp;
+                                            <span>
+                                                <label class="standard">Standard Delivery</label>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-4 mt-3">
+                                        <div class="colorpara">
+                                            <p>1 item@ ₹199 Delivery Free</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-4 mt-3">
+                                        <div>
+                                            <select class="form-select form-select mb-3"
+                                                aria-label=".form-select-md example">
+                                                <option selected>--Select Date--</option>
+                                                <option value="1">15 Apr</option>
+                                                <option value="2">18 Apr</option>
+                                                <option value="3">25 Apr</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="downbox mt-5">
+                                <button class="return" id="backthird"><i class="bi bi-arrow-left"></i> &nbsp;Return to
+                                    Delivery
+                                    address</button>
+                                <button class="proceed" id="btnthird">Continue Payment Options &nbsp;<i
+                                        class="bi bi-arrow-right"></i></button>
+
+                            </div>
+                        </div>
+                        <!---- delivery options ends here --------->
+
+
+
+                        <!---- payment options starts here --------->
+                        <div class="tab-pane fade" id="pills-payment" role="tabpanel"
+                            aria-labelledby="pills-payment-tab" tabindex="0">
+
+                            <div class="paymentmethod">
+                                <div class="paymenthead">
+                                    <p>Payment Option</p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xxl-8 mt-3">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button cashpayment" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+
+                                                        <input id="yes" type="radio" name="s"><label for="yes"></label>
+                                                        &nbsp;&nbsp;
+                                                        <span>
+                                                            <label class="">Cash on Delivery</label>
+                                                        </span>
+
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Pay cash on Delivery
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-4 mt-3">
+                                        <div class="ordersummary">
+                                            <h5 class="text-center">Order Summary</h5>
+                                            <hr>
+                                            <div class="ordersummarylist">
+                                                <div class="summarylist">
+                                                    <p>Clothing</p>
+                                                    <p>₹199</p>
+                                                </div>
+                                                <div class="summarylist">
+                                                    <p>Clothing</p>
+                                                    <p>₹199</p>
+                                                </div>
+                                                <div class="summarylist">
+                                                    <p>Clothing</p>
+                                                    <p>₹199</p>
+                                                </div>
+                                                <div class="summarylist">
+                                                    <p>Clothing</p>
+                                                    <p>₹199</p>
+                                                </div>
+                                                <div class="summarylist">
+                                                    <p>Clothing</p>
+                                                    <p>₹199</p>
+                                                </div>
+
+                                            </div>
+                                            <hr>
+                                            <div class="pricesummary mt-3">
+
+                                                <div class="summarylist">
+                                                    <p class="fw-bold">Subtotal</p>
+                                                    <p>₹199</p>
+                                                </div>
+                                                <div class="summarylist">
+                                                    <p class="fw-bold">Promo Code Disscount</p>
+                                                    <p>₹0</p>
+                                                </div>
+                                                <div class="summarylist">
+                                                    <p class="fw-bold">Shipping</p>
+                                                    <p>₹0</p>
+                                                </div>
+                                                <hr>
+                                                <div class="summarylist">
+                                                    <p class="fw-bold summarytotal">Total</p>
+                                                    <p class="fw-bold summarytotal">₹199</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="downbox mt-5">
+                                <button class="return" id="backfourth"><i class="bi bi-arrow-left"></i> &nbsp;Return to
+                                    Delivery
+                                    Option</button>
+                                <a href="ordersuccessfully.html" class="proceed" id="btnfourth">Proceed Order &nbsp;<i
+                                        class="bi bi-arrow-right"></i></a>
+
+                            </div>
+                        </div>
+                        <!---- payment options ends here --------->
+
+                    </div>
+                    <!---------------------------------------- tabbing system ends here -------------------------------------------->
+
+                </div>
+                <div class="col-lg-1 mt-5"></div>
+
+
+
+                <!-- Modal start for add new address-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add a new address</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" placeholder="Full name">
+                                    <label>Full name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="floatingPassword"
+                                        placeholder="Phone Number">
+                                    <label>Phone Number</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" placeholder="Email address">
+                                    <label>Email address</label>
+                                </div>
+                                <select class="form-select form-select mb-3 p-3" aria-label=".form-select-md example">
+                                    <option selected>--Select City--</option>
+                                    <option value="1">Noida</option>
+                                    <option value="2">Delhi</option>
+                                    <option value="3">Gurgaon</option>
+                                </select>
+                                <select class="form-select form-select mb-3 p-3" aria-label=".form-select-md example">
+                                    <option selected>--Select Area--</option>
+                                    <option value="1">Sector-63</option>
+                                    <option value="2">Mukharjeenagar</option>
+                                    <option value="3">Huda City Center</option>
+                                </select>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" placeholder="Pincode">
+                                    <label>Pincode</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" placeholder="State">
+                                    <label>State</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" placeholder="Country">
+                                    <label>Country</label>
+                                </div>
+                                <div class="form-check form-check-inline ps-0">
+                                    <input id="yes" type="radio" name="s"><label for="yes"></label> &nbsp;
+                                    <label class="form-check-label" for="inlineRadio1">Home Address</label>
+                                </div>
+                                <div class="form-check form-check-inline ps-0">
+                                    <input id="yes" type="radio" name="s"><label for="yes"></label> &nbsp;
+                                    <label class="form-check-label" for="inlineRadio2">Office Address</label>
+                                </div>
+                                <div class="form-check form-check-inline ps-0">
+                                    <input id="yes" type="radio" name="s"><label for="yes"></label> &nbsp;
+                                    <label class="form-check-label" for="inlineRadio3">Other</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn saveadd">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal end  for add new address-->
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------- checkout section ends here ------------------------------------------>
+
+
+
+
+    <!----------------------------------- footer section starts here  -------------------------------------->
+    <section class="footer mt-5 pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>About Us</h5>
+                        <div class="footer-text mt-4">
+                            <p>Creativity, Positive Change & Self Expression</p>
+                            <a href="#">Learn More</a>
+                            <p class="mt-3">&COPY;&nbsp;2023, All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Policies</h5>
+                        <div class="footer-links mt-4">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="privacy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="shippingpolicy.html">Shipping Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <div class="footer-area">
+                        <h5>News Letter</h5>
+                        <div class="footer-text mt-4">
+                            <p>Sign up to stay updated about upcoming launches & offers!</p>
+                            <div class="newletter-input mt-3 mb-4">
+                                <input type="email" class="inpemail p-1" placeholder="Enter your email" name=""
+                                    id=""><span><input type="button" class="inpbtn" value="Subscribe"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Follow Us</h5>
+                        <div class="footer-text  mt-4">
+                            <p>Stay in touch!</p>
+                            <div class="footer-sociallinks mt-3">
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- footer section ends here  -------------------------------------->
+
+
+
+
+
+
+    <script>
+
+      // to plus and minus add product to in cart script starts here 
+      $(function () {
+            $(".minus,.add").on("click", function () {
+                var $qty = $(this).closest("p").find(".qty"),
+                    currentVal = parseInt($qty.val()),
+                    isAdd = $(this).hasClass("add");
+                !isNaN(currentVal) &&
+                    $qty.val(
+                        isAdd ? ++currentVal : currentVal > 1 ? --currentVal : currentVal
+                    );
+            });
+        });
+        // to plus and minus add product to in cart script ends here
+
+
+        // script for nav tabbing starts here 
+        $(document).ready(function () {
+            $("#btnfirst").click(function () {
+                $("#pills-shoppingcart-tab").removeClass('active');
+                $("#pills-shoppingcart").removeClass('active show');
+                $("#pills-deliveryaddress").addClass('active show');
+                $("#pills-deliveryaddress-tab").addClass('active');
+            });
+
+            $("#btnsecond").click(function () {
+                $("#pills-deliveryaddress-tab").removeClass('active');
+                $("#pills-deliveryaddress").removeClass('active show');
+                $("#pills-deliveryoption").addClass('active show');
+                $("#pills-deliveryoption-tab").addClass('active');
+            });
+            $("#btnthird").click(function () {
+                $("#pills-deliveryoption-tab").removeClass('active');
+                $("#pills-deliveryoption").removeClass('active show');
+                $("#pills-payment").addClass('active show');
+                $("#pills-payment-tab").addClass('active');
+            });
+
+
+            $("#backfourth").click(function () {
+                $("#pills-payment-tab").removeClass('active');
+                $("#pills-payment").removeClass('active show');
+                $("#pills-deliveryoption").addClass('active show');
+                $("#pills-deliveryoption-tab").addClass('active');
+            });
+            $("#backthird").click(function () {
+                $("#pills-deliveryoption-tab").removeClass('active');
+                $("#pills-deliveryoption").removeClass('active show');
+                $("#pills-deliveryaddress").addClass('active show');
+                $("#pills-deliveryaddress-tab").addClass('active');
+            });
+            $("#backsecond").click(function () {
+                $("#pills-deliveryaddress-tab").removeClass('active');
+                $("#pills-deliveryaddress").removeClass('active show');
+                $("#pills-shoppingcart").addClass('active show');
+                $("#pills-shoppingcart-tab").addClass('active');
+            });
+        });
+        // script for nav tabbing ends here 
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-dashboardorder</title>
+
+    <!-- External css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External js file link  -->
+    <script src="script.js"></script>
+
+     <!-- Bootstrap links -->
+     <link rel="stylesheet" href="bootstrap.min.css">
+     <script src="bootstrap.bundle.min.js"></script>
+ 
+     <!-- owl carousel links -->
+     <link rel="stylesheet" href="owl.carousel.min.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+     <script src="jquery.min.js"></script>
+     <script src="owl.carousel.js"></script>
+
+</head>
+
+<body>
+    <!---------------------- navbar starts here  --------------------------->
+    <nav class="navbar  navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand " href="index.html">EduQRCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg">
+                <span class="toggleicon"><i class="bi bi-text-right"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">EduQRCode</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="menu">
+                    <ul class="navbar-nav justify-content-center ms-5  flex-grow-1">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="category.html">Men</a></li>
+                                <li><a class="dropdown-item" href="category.html">Women</a></li>
+                                <li><a class="dropdown-item" href="category.html">Children</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Women
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                                <li><a class="dropdown-item" href="#">Jeans</a></li>
+                                <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
+                        </li>
+
+                      
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blogs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex mt-2 me-3 login" role="search">
+
+                        <!-- <a href="#">Sign Up</a>&nbsp;/ &nbsp;<a href="#">Sign In</a> -->
+
+
+                        <div class="input-wrapper ">
+                            <button class="icon">
+                              <i class="bi bi-search"></i>
+                            </button>
+                            <input placeholder="Search..." class="input" name="text" type="text">
+                        </div>
+
+                        
+                        <span class="ms-3"><i class="bi bi-bag-check-fill" onclick="window.location.href='cart.html';"></i></span>&nbsp; <span><sup>(0)</sup></span>
+                        <a href="signin.html" class="ms-3">Account</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-------------------------------- navbar ends here  ------------------------------>
+
+    <!-------------------------------------------- dashboard section starts here --------------------->
+
+    <section class="our_product mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top_heading text-center">
+                        <p>Welcome to Dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="usersection mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4  col-xxl-3 mt-5">
+                    <div class="userdetail">
+
+                        <div class="profile-pic">
+                            <label class="-label" for="file">
+                                <span><i class="bi bi-camera-fill"></i></span>
+                                <span>Change Image</span>
+                            </label>
+                            <input id="file" type="file"/>
+                            <img src="ava3.webp" id="output" width="200" />
+                        </div>
+                        <div class="username text-center mt-3">
+                            <h5>Testing</h5>
+                            <h6>support@gmail.com</h6>
+
+                        </div>
+                        <hr>
+                        <div class="dashboardmenu">
+                            <div class="nav flex-column  me-3" aria-orientation="vertical">
+
+
+                                <a href="dashboard.html" class="nav-link active w-100"><i
+                                        class="bi bi-house-door"></i>&nbsp;&nbsp;Dashboard</a>
+
+
+                                <a href="dashboardorder.html" class="nav-link"><i
+                                        class="bi bi-bag-check"></i>&nbsp;&nbsp;Order</a>
+
+
+                                <a href="dashboardwishlist.html" class="nav-link"><i
+                                        class="bi bi-heart"></i>&nbsp;&nbsp;Wishlist</a>
+
+
+                                <a href="dashboardaddress.html" class="nav-link"><i
+                                        class="bi bi-geo-alt"></i>&nbsp;&nbsp;Address</a>
+
+                                <a href="dashboardprofile.html" class="nav-link"><i
+                                        class="bi bi-person"></i>&nbsp;&nbsp;Profile</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8  col-xxl-9  mt-5">
+                    <div class="rightdashboardpanel h-100">
+                        <div class="dashboardsection">
+                            <h2>My Order History</h2>
+                        </div>
+
+                         <!-- main card starts here  -->
+                         <div class="main-card mt-3 h-100">
+                            <!-- product one starts  -->
+                            <div class="card mb-4 cardproductdetail" onclick="window.location.href='dashboardorderdetail.html';">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="img1.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-md-4 pt-2">
+                                                <p class="fw-bold mb-1">Clothing</p>
+                                                <p>Clothing about</p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <p>₹199.00</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul class="ps-2">
+                                                    <li class="deliverddate fw-bold">
+                                                        Deliverd on Feb 17,2022
+                                                    </li>
+
+                                                </ul>
+                                                <p>Your item has been delivered</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- product one ends  -->
+
+                            <!-- product two starts  -->
+
+                            <div class="card mb-4 cardproductdetail" onclick="window.location.href='dashboardorderdetail.html';">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="img2.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-md-4 pt-2">
+                                                <p class="fw-bold mb-1">Clothing</p>
+                                                <p>Clothing about</p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <p>₹199.00</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul class="ps-2">
+                                                    <li class="deliverddate fw-bold">
+                                                        Deliverd on Feb 17,2022
+                                                    </li>
+
+                                                </ul>
+                                                <p>Your item has been delivered</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- product two ends  -->
+
+                            <!-- product three starts  -->
+
+                            <div class="card mb-4 cardproductdetail" onclick="window.location.href='dashboardorderdetail.html';">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="img1.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-md-4 pt-2">
+                                                <p class="fw-bold mb-1">Clothing</p>
+                                                <p>Clothing about</p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <p>₹199.00</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul class="ps-2">
+                                                    <li class="deliverddate fw-bold">
+                                                        Deliverd on Feb 17,2022
+                                                    </li>
+
+                                                </ul>
+                                                <p>Your item has been delivered</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- product three ends  -->
+
+                        </div>
+
+                        <!-- main card ends here  -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+        
+        
+    </section>
+    <!-------------------------------------------- dashboard section ends here --------------------->
+
+
+   
+
+
+    <!----------------------------------- footer section starts here  -------------------------------------->
+    <section class="footer mt-5 pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>About Us</h5>
+                        <div class="footer-text mt-4">
+                            <p>Creativity, Positive Change & Self Expression</p>
+                            <a href="#">Learn More</a>
+                            <p class="mt-3">&COPY;&nbsp;2023, All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Policies</h5>
+                        <div class="footer-links mt-4">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="privacy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="shippingpolicy.html">Shipping Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <div class="footer-area">
+                        <h5>News Letter</h5>
+                        <div class="footer-text mt-4">
+                            <p>Sign up to stay updated about upcoming launches & offers!</p>
+                            <div class="newletter-input mt-3 mb-4">
+                                <input type="email" class="inpemail p-1" placeholder="Enter your email" name=""
+                                    id=""><span><input type="button" class="inpbtn" value="Subscribe"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Follow Us</h5>
+                        <div class="footer-text  mt-4">
+                            <p>Stay in touch!</p>
+                            <div class="footer-sociallinks mt-3">
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- footer section ends here  -------------------------------------->
+
+
+
+
+
+
+    <script>
+
+    
+
+    </script>
+</body>
+
+</html>

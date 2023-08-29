@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-Blog</title>
+
+    <!-- External css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External js file link  -->
+    <script src="script.js"></script>
+
+     <!-- Bootstrap links -->
+     <link rel="stylesheet" href="bootstrap.min.css">
+     <script src="bootstrap.bundle.min.js"></script>
+ 
+     <!-- owl carousel links -->
+     <link rel="stylesheet" href="owl.carousel.min.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+     <script src="jquery.min.js"></script>
+     <script src="owl.carousel.js"></script>
+
+</head>
+
+<body>
+    <!---------------------- navbar starts here  --------------------------->
+    <nav class="navbar  navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand " href="index.html">EduQRCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg">
+                <span class="toggleicon"><i class="bi bi-text-right"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">EduQRCode</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="menu">
+                    <ul class="navbar-nav justify-content-center ms-5  flex-grow-1">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="category.html">Men</a></li>
+                                <li><a class="dropdown-item" href="category.html">Women</a></li>
+                                <li><a class="dropdown-item" href="category.html">Children</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Women
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                                <li><a class="dropdown-item" href="#">Jeans</a></li>
+                                <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
+                        </li>
+
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blogs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex mt-2 me-3 login" role="search">
+
+                        <!-- <a href="#">Sign Up</a>&nbsp;/ &nbsp;<a href="#">Sign In</a> -->
+
+
+                        <div class="input-wrapper ">
+                            <button class="icon">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <input placeholder="Search..." class="input" name="text" type="text">
+                        </div>
+
+                     
+                        <span class="ms-3"><i class="bi bi-bag-check-fill" onclick="window.location.href='cart.html';"></i></span>&nbsp; <span><sup>(0)</sup></span>
+                        <a href="signin.html" class="ms-3">Account</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-------------------------------- navbar ends here  ------------------------------>
+
+
+
+     <!--------------------------------------------------- blog section starts here ------------------------------------------->
+     <section class="our_product mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top_heading text-center">
+                        <p>Our Blogs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="blogpage mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- left side starts here  -->
+                <div class="col-lg-8 col-xxl-8 col-md-12 col-sm-12 col-12 mt-5">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mainblogbox">
+
+                                <div class="blogimgsection">
+                                    <a href="blogdetail.html"><img src="blogimg1.jpg" class="img-fluid" width="100%"
+                                            alt=""></a>
+                                </div>
+                                <div class="blogdetail p-3">
+                                    <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;June 19,2023</p>
+                                    <h2 class="bloglink"> <a href="blogdetail.html">Blog One</a></h2>
+                                    <p><span class="admintext">by Admin | 08 comments</span></p>
+                                    <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Fugiat minima eos numquam autem odit tempora repellendus sed? Harum modi error
+                                        officia obcaecati impedit reiciendis tempora, quibusdam dolore perspiciatis
+                                        aspernatur illo distinctio dicta corporis culpa, id repellat praesentium sit?
+                                        Laborum eum excepturi nesciunt eos eligendi quasi porro impedit mollitia officia
+                                        fugiat.</p>
+                                    <a href="blogdetail.html" class="readmore">Read More&nbsp;&nbsp;<i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-lg-6 col-xxl-6 col-md-6 col-sm-12 mt-5">
+
+                            <div class="mainblogbox">
+
+                                <div class="blogimgsection">
+                                    <a href="blogdetail.html"><img src="blogimg2.jpg" class="img-fluid"  width="100%"
+                                            alt=""></a>
+                                </div>
+                                <div class="blogdetail p-3">
+                                    <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;June 19,2023</p>
+                                    <h2 class="bloglink"> <a href="blogdetail.html">Blog Two</a></h2>
+                                    <p><span class="admintext">by Admin | 08 comments</span></p>
+                                    <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Fugiat minima eos numquam autem odit tempora repellendus sed?</p>
+                                    <a href="blogdetail.html" class="readmore">Read More&nbsp;&nbsp;<i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xxl-6 col-md-6 col-sm-12 mt-5">
+
+                            <div class="mainblogbox">
+
+                                <div class="blogimgsection">
+                                    <a href="blogdetail.html"><img src="blogimg1.jpg" class="img-fluid" width="100%"
+                                            alt=""></a>
+                                </div>
+                                <div class="blogdetail p-3">
+                                    <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;June 19,2023</p>
+                                    <h2 class="bloglink"> <a href="blogdetail.html">Blog Three</a></h2>
+                                    <p><span class="admintext">by Admin | 08 comments</span></p>
+                                    <p class="subpara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Fugiat minima eos numquam autem odit tempora repellendus sed?</p>
+                                    <a href="blogdetail.html" class="readmore">Read More&nbsp;&nbsp;<i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- left side ends here  -->
+
+
+                <!-- right side starts here  -->
+                <div class="col-lg-4 col-xxl-4 col-md-12 col-sm-12 col-12 mt-5">
+                    <div class="blogrightside">
+                        <p class="searchheading">Search</p>
+
+                        <!-- search box here start  -->
+                        <form class="search-form">
+                            <div class="form-group">
+                                <input type="search" name="search-field" placeholder="Search..." required="">
+                                <button type="submit"><i class="bi bi-search"></i></button>
+                            </div>
+                        </form>
+                        <!-- search box here ends  -->
+
+                        <!-- categories starts here  -->
+                        <div class="rightcategories mt-5">
+                            <p class="categoryhead">Categories</p>
+                            <ul class="categorieslist">
+                                <li>
+                                    <a href="blogdetail.html">Blog 1</a>
+                                </li>
+                                <li>
+                                    <a href="blogdetail.html">Blog 2</a>
+                                </li>
+                                <li>
+                                    <a href="blogdetail.html">Blog 3</a>
+                                </li>
+                                <li>
+                                    <a href="blogdetail.html">Blog 4</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- categories ends here  -->
+
+
+                        <!-- popular posts starts here  -->
+                        <div class="rightpopularposts mt-5">
+                            <p class="popularposthead">Popular posts</p>
+
+                            <div class="popularpostsdetail">
+                                <div class="popularsubposts mt-3">
+                                    <div class="popularimagebox">
+
+                                        <div class="popularpostimg">
+
+                                            <a href="blogdetail.html"> <img src="blogimg1.jpg" width="100%"
+                                                    alt=""></a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="popularsubtext ms-4">
+                                        <h4> <a href="blogdetail.html"> Popular post 1</a></h4>
+                                        <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;May 09,2023
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popularsubposts mt-3">
+                                    <div class="popularimagebox">
+
+                                        <div class="popularpostimg">
+
+                                            <a href="blogdetail.html"> <img src="blogimg2.jpg" width="100%"
+                                                    alt=""></a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="popularsubtext ms-4">
+                                        <h4> <a href="blogdetail.html"> Popular post 2</a></h4>
+                                        <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;May 09,2023
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popularsubposts mt-3">
+                                    <div class="popularimagebox">
+
+                                        <div class="popularpostimg">
+
+                                            <a href="blogdetail.html"> <img src="blogimg1.jpg" width="100%"
+                                                    alt=""></a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="popularsubtext ms-4">
+                                        <h4> <a href="blogdetail.html"> Popular post 3</a></h4>
+                                        <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;May 09,2023
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popularsubposts mt-3">
+                                    <div class="popularimagebox">
+
+                                        <div class="popularpostimg">
+
+                                            <a href="blogdetail.html"> <img src="blogimg2.jpg" width="100%"
+                                                    alt=""></a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="popularsubtext ms-4">
+                                        <h4> <a href="blogdetail.html"> Popular post 4</a></h4>
+                                        <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;May 09,2023
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="popularsubposts mt-3">
+                                    <div class="popularimagebox">
+
+                                        <div class="popularpostimg">
+
+                                            <a href="blogdetail.html"> <img src="blogimg1.jpg" width="100%"
+                                                    alt=""></a>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="popularsubtext ms-4">
+                                        <h4> <a href="blogdetail.html"> Popular post 5</a></h4>
+                                        <p class="blogdetaildate"><i class="bi bi-dash-lg dash"></i>&nbsp;May 09,2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- popular posts ends here  -->
+
+
+                        <!-- archives starts here -->
+                        <div class="rightcategories mt-5">
+                            <p class="categoryhead">Archives</p>
+                            <ul class="categorieslist">
+                                <li>
+                                    <a href="blogdetail.html">April 2020</a>
+                                </li>
+                                <li>
+                                    <a href="blogdetail.html">May 2019</a>
+                                </li>
+                                <li>
+                                    <a href="blogdetail.html">June 2018</a>
+                                </li>
+                                <li>
+                                    <a href="blogdetail.html">July 2017</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- archives ends here -->
+
+
+                    </div>
+                </div>
+                <!-- right side ends here  -->
+
+            </div>
+        </div>
+
+    </section>
+    <!--------------------------------------------------- blog section ends here ------------------------------------------->
+
+
+   
+
+
+    <!----------------------------------- footer section starts here  -------------------------------------->
+    <section class="footer mt-5 pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>About Us</h5>
+                        <div class="footer-text mt-4">
+                            <p>Creativity, Positive Change & Self Expression</p>
+                            <a href="#">Learn More</a>
+                            <p class="mt-3">&COPY;&nbsp;2023, All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Policies</h5>
+                        <div class="footer-links mt-4">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="privacy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="shippingpolicy.html">Shipping Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <div class="footer-area">
+                        <h5>News Letter</h5>
+                        <div class="footer-text mt-4">
+                            <p>Sign up to stay updated about upcoming launches & offers!</p>
+                            <div class="newletter-input mt-3 mb-4">
+                                <input type="email" class="inpemail p-1" placeholder="Enter your email" name=""
+                                    id=""><span><input type="button" class="inpbtn" value="Subscribe"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-area">
+                        <h5>Follow Us</h5>
+                        <div class="footer-text  mt-4">
+                            <p>Stay in touch!</p>
+                            <div class="footer-sociallinks mt-3">
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- footer section ends here  -------------------------------------->
+
+
+
+
+
+
+    <script>
+
+    
+
+    </script>
+</body>
+
+</html>
